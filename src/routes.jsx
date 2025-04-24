@@ -22,23 +22,23 @@ import Assessment        from './pages/Learning/Assessment'
 
 // Activities pages
 import Afterschool    from './pages/Activities/Afterschool'
-import StudentLead    from './pages/Activities/StudentLeadership'
+import StudentLead    from './pages/Activities/StudentLead'
 import ECAClubs       from './pages/Activities/ECAClubs'
 import Events         from './pages/Activities/Events'
 
 // Information pages
-import NewsPage       from './pages/Information/News'
-import CalendarPage   from './pages/Information/Calendar'
-import UniformPage   from './pages/Information/Uniform'
+import NewsPage       from './pages/Information/NewsPage'
+import CalendarPage   from './pages/Information/CalendarPage'
+import UniformPage   from './pages/Information/UniformPage'
 
 // Admission pages
-import PolicyPage     from './pages/Admission/Policy'
+import PolicyPage     from './pages/Admission/PolicyPage'
 import EcaSignup      from './pages/Admission/EcaSignup'
-import AdmissionForm  from './pages/Admission/Form'
-import FeesPage       from './pages/Admission/Fees'
+import AdmissionForm  from './pages/Admission/AdmissionForm'
+import FeesPage       from './pages/Admission/FeesPage'
 
 // Other
-import ContactPage    from './pages/Contact'
+import ContactPage    from './pages/ContactPage'
 import BlogOverview   from './pages/BlogOverview'
 import NewsDashboard  from './pages/NewsDashboard'
 import BlogManager    from './pages/BlogManager'
