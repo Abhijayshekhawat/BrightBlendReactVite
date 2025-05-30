@@ -2,11 +2,15 @@ import React from 'react';
 import '../styles/HomePage.css';
 import heroImage from '../assets/hero-bg.jpg';
 import Banner from '../assets/HomeBanner.jpg'
+import SchoolBanner from '../assets/SchoolMedia/group2.jpg'
 import AdmissionSection from '../components/AdmissionSteps.jsx'; // Adjust the import path as necessary
 
 export default function HomePage() {
   return (
     <div className="homepage">
+      <section>
+      <img src={SchoolBanner} alt="Hero" className="homepage__hero-image" />
+     </section>
       <section className="homepage__intro">
        <div className="intro__left">
          <p>Discover Your <br />
@@ -18,9 +22,7 @@ export default function HomePage() {
          <a href="/admission" className="btn btn--primary">Learn More</a>
        </div>
      </section>
-     <section>
-      <img src={Banner} alt="Hero" className="homepage__hero-image" />
-     </section>
+     
      <section className="homepage__intro">
        <div className="intro__left">
          <p>Unleash the students possibilities with us</p>

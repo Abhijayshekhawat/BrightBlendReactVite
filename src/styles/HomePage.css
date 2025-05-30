@@ -2,8 +2,13 @@
   width: 100%;
   height: auto;
   display: block; /* Removes extra space below image */
-  max-height: 400px;
+  max-height: 500px;
   object-fit: cover; /* Ensures the image covers the area without distortion */
+  border: 6px dashed var(--color-primary); /* soft orange */
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(var(--color-blue-rgb), 0.4);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .homepage__about {
   padding: 30px;
@@ -15,8 +20,6 @@
   margin-bottom: 2rem;
   color: var(--color-primary);
 }
-
-
 
 .homepage__features {
   display: flex;
@@ -77,9 +80,10 @@
 /* Left column text */
 .intro__left p {
   font-size: 3.5rem;
-  font-family: Garamond, serif;
+  font-family: 'Bradley Hand', cursive;
   line-height: normal;
   text-align: left;
+  color: black;
 }
 .intro__right p {
   font-size: 1.1rem;
