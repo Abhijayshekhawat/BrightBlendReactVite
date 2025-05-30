@@ -42,7 +42,7 @@ export const nav = [
         { label: 'Fees', path: 'fees' },
       ]
     },
-    { label: 'Contact', path: '/contact' },
+    { label: 'Contact Us', path: '/contact' },
     { label: 'Blog', path: '/blog' },
   ]
   

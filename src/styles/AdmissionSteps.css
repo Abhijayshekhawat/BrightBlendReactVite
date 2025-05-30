@@ -1,0 +1,96 @@
+.admission-section {
+    padding: 0rem 0.5rem;
+    background: var(--color-background);
+    color: var(--color-text);
+    text-align: center;
+  }
+  
+  /* Header */
+  .admission-section__header {
+    margin-bottom: 2.5rem;
+  }
+  .admission-section__label {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-family: Garamond, serif;
+    line-height: normal;
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+  .admission-section__heading {
+    font-size: 3.5rem;
+    font-family: Garamond, serif;
+    line-height: normal;
+    color: var(--color-text);
+    font-weight: normal;
+  }
+  
+  /* Steps Grid */
+  .admission-section__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Step */
+  .admission-section__step {
+    background: var(--color-background-alt, #f9f9f9);
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--color-secondary-light, #e4f0f9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .step-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .step-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+  
+  .step-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+  
+  .step-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary, #555);
+    max-width: 220px;
+  }
+  
+  /* Responsive: stack vertically on small screens */
+  @media (max-width: 600px) {
+    .admission-section__steps {
+      grid-template-columns: 1fr;
+    }
+    .admission-section__step {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  

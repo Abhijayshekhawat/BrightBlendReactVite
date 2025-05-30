@@ -1,22 +1,96 @@
 .layout-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-  }
-  .main-content {
-    flex: 1 0 auto;
-    margin: 0 auto;
-    padding: 24px;
-  }
-  .site-footer {
-    background: #f0f0f0;
-    padding: 16px 0;
-    flex-shrink: 0;
-  }
-  .footer-content {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  /* remove auto-margin centering */
+  margin: 0;
   
+  /* you can choose one of these two patterns: */
+  
+  /* 1) FULL-BLEED: let content go edge-to-edge 
+  max-width: 100%;
+  padding: 24px;
+  */
+  /* 2) CENTERED LAYOUT: constrain width but center it */
+  max-width: 1200px;      /* adjust as you like */
+   margin-left: auto;       
+  margin-right: auto;       
+  padding: 24px;            
+}
+
+/* Footer */
+.site-footer {
+  background: var(--color-background-alt, #f8f9fa);
+  color: var(--color-text);
+  flex-shrink: 0;
+}
+
+/* Grid wrapper for logo+contact + sitemap columns */
+.footer-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Logo & contact column */
+.footer-logo-col {
+  text-align: center;
+}
+.footer-logo-col img{
+  width: 85%;
+}
+.footer-logo{
+  margin-bottom: 0.1rem;
+  margin-left: 0.4rem;
+}
+.footer-contact {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: -7%;
+  line-height: 1.4;
+  color: var(--color-text-secondary, #555);
+  text-align: center;
+
+}
+
+/* Each sitemap column */
+.footer-col__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.footer-col__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col__list li {
+  margin-bottom: 0.25rem;
+}
+.footer-col__list a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-col__list a:hover {
+  color: var(--color-primary);
+}
+
+/* Bottom copyright bar */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  color: var(--color-text-secondary, #777);
+}
