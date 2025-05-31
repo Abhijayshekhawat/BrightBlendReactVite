@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/HomePage.css';
 import heroImage from '../assets/hero-bg.jpg';
 import Banner from '../assets/HomeBanner.jpg'
-import SchoolBanner from '../assets/SchoolMedia/group2.jpg'
+import SchoolBanner from '../assets/SchoolMedia/ai2group2.jpg'
 import AdmissionSection from '../components/AdmissionSteps.jsx'; // Adjust the import path as necessary
 
 export default function HomePage() {

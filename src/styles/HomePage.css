@@ -2,10 +2,10 @@
   width: 100%;
   height: auto;
   display: block; /* Removes extra space below image */
-  max-height: 500px;
+  max-height: 600px;
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border: 6px dashed var(--color-primary); /* soft orange */
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 10px;
   background-color: rgba(var(--color-blue-rgb), 0.4);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
